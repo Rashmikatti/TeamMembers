@@ -1,11 +1,10 @@
 <div class="container">
     <div style="margin-top: 20px;" class="row">
-        <div style="margin-bottom: 30px;" class="col-md-3" *ngFor="let res of randomNum">
+        <div style="margin-bottom: 30px;" class="col-md-3" *ngFor="let res of profileArr">
             <div class="card">
-                <img [src]="res.image" alt="John" style="min-width:100%">
+                <img [src]="res.image" alt="Error" style="min-width:100%">
                 <h3>{{res.name}}</h3>
                 <p class="title">{{res.hobbies}}</p>
-                <!-- <p>{{res.hobbies}}</p> -->
                
               </div>
         </div>

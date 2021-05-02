@@ -50,7 +50,7 @@ export class ProfileComponent implements OnInit {
       "image":'../../assets/rohit.jpg'
     }
   ]
-  randomNum=[];
+  profileArr=[];
   
   constructor() { }
 
@@ -63,7 +63,7 @@ export class ProfileComponent implements OnInit {
      /**
       * result    - Array of 4 items 
       * Arrlength - Length of the TeamMember Array
-      * taken     - Array of original length
+      * 
       */
     var result = new Array(limit),
         Arrlength = arr.length,
@@ -92,7 +92,7 @@ export class ProfileComponent implements OnInit {
       this.getRandom(this.arr,limit)
     }, 5000);
 
-    this.randomNum=result
-    return this.randomNum
+    this.profileArr=result
+    return this.profileArr
 }
 }
